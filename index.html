@@ -4,29 +4,35 @@
   <title>Fortunate Gang</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
     <!--nav bar implemented-Wyatt-->
-        <nav class="navbar navbar">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Big Mans in the 206</a>
-                  </div>
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#Wyatt">Wyatt</a></li>
-                    <li><a href="#Edison">Edison</a></li>
-                    <li><a href="#Diego">Diego</a></li>
-                  </ul>
-                </div>
-              </nav>
-              <!--Title-->
-              <div>
-                <h1 class="text-center">Fortunate Gang</h1>
-                </div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Big Mans in the 206</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Wyatt">Wyatt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Edison">Edison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Diego">Diego</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Title-->
+    <div>
+        <h1 class="text-center">Fortunate Gang</h1>
+    </div>
                 <!-- Adding amy about me section-Wyatt-->
     <div id="Wyatt"></div>
     <h1 class="wyattName">Wyatt Olson</h1>
@@ -41,20 +47,18 @@
     <!-- Adding my about me section-Edison-->
     <div id="Edison">
       <h1 class="EdisonName">Edison Soliman</h1>
-      <div class="row10">
-      <div class="col-md-4">
-            <img src="http://edisonsoliman.com/wp-content/uploads/2019/04/MG_3701-copy-3358325210-1557271100774.jpeg" alt="Me" style="width:100%">
+      <div class="row">
+          <div class="col-md-4">
+            <img src="http://edisonsoliman.com/wp-content/uploads/2019/04/MG_3701-copy-3358325210-1557271100774.jpeg" style="width:100%">
           </div>
-          <div class="col-sm-4" id="Edisonself">
-              <img src="http://edisonsoliman.com/wp-content/uploads/2019/05/MG_4275.jpg" alt="Me2" style="width:100%">
-            </div>
-        <div class="col-md-4" id="Edisonself2">
-              <img src="http://edisonsoliman.com/wp-content/uploads/2019/05/Heaven.jpg" alt="Me3" style="width:100%">
-            </div>
+          <div class="col-md-4">
+              <img src="http://edisonsoliman.com/wp-content/uploads/2019/05/MG_4275.jpg" style="width:100%">
+          </div>
+          <div class="col-md-4">
+              <img src="http://edisonsoliman.com/wp-content/uploads/2019/05/Heaven.jpg" style="width:100%">
+          </div>
       </div>
     </div>
-    <br></br>
-    <div></div>
       <p>
       My name is <strong> Edison Soliman </strong>,
        a first-year student at
@@ -71,26 +75,30 @@
       </p>
     </div>
 
-
      <!-- Adding my about me section - Diego-->
      <div id="Diego">
         <h1 class="diegoName">Diego Guzman</h1>
+          <div class="d-flex justify-content-around">
+            <div class="p-2"><span style="color:red;font-weight:bold">------------------------------------------</span></div>
+            <div class="p-2"><span style="color:red;font-weight:bold">------------------------------------------</span></div>
+            <div class="p-2"><span style="color:red;font-weight:bold">------------------------------------------</span></div>
+          </div>
             <div class="row">
               <div class="col-md-4">
-                <img src="https://avatars1.githubusercontent.com/u/32083666?s=400&v=4" alt="github" style="width:100%" >
+                <img src="https://avatars1.githubusercontent.com/u/32083666?s=400&v=4" style="width:100%" >
               </div>
               <div class="col-md-4">
-                <img src="https://richardgeneralcontractors.com/wp-content/uploads/2019/05/self3.jpg" align="blue1" style="width:100%">
+                <img src="https://richardgeneralcontractors.com/wp-content/uploads/2019/05/self3.jpg" style="width:100%">
               </div>
-              <div class="col-md-4" id="self">
-                <img src="https://richardgeneralcontractors.com/wp-content/uploads/2019/05/self2.jpg" align="blue2" style="width:100%">
+              <div class="col-md-4">
+                <img src="https://richardgeneralcontractors.com/wp-content/uploads/2019/05/self2.jpg" style="width:90%" >
               </div>
             </div>
-            <p>Hi, my name is Diego Guzman and I am currently a senior at the University of Washington Bothell majoring in <b>Computer Science and Software Engineering.</b>
-                Besides being a full-time student, I enjoy working on side projects and learn how technology interacts with each other.</p>
-        </div>
-        <br></br>
-
+              <div class="p-3 bd-highlight">Hi, my name is Diego Guzman and I am currently a senior at the University of Washington Bothell majoring in <b>Computer Science and Software Engineering.</b>
+                    Besides being a full-time student, I enjoy working on side projects and learn how technology interacts with each other.
+              </div>
+              <br></br>
+      </div>
        <!-- Adding the table section-->
        <!-- Added my information- Wyatt -->
        <!--Added my information- Edison-->
@@ -174,6 +182,7 @@
              </td>
              </tr>
            </tbody>
+
          </table>
        </div>
 </body>
