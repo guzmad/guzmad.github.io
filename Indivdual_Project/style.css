@@ -1,0 +1,9 @@
+.pic:hover{
+  transform: scale(.95);
+}
+
+body{
+  background: url("Remodeling.jpg");
+  background-size: cover;
+
+}
