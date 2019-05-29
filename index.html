@@ -106,24 +106,20 @@
          <div class="p-3 bd-highlight">Hi, my name is Diego Guzman and I am currently a senior at the University of Washington Bothell majoring in <b>Computer Science and Software Engineering.</b>
                    Besides being a full-time student, I enjoy working on side projects and learn how technology interacts with each other.
          </div>
-       <!-- Adding the table section-->
-       <!-- Added my information- Wyatt -->
-       <!--Added my information- Edison-->
-       <div class="container">
-         <h2>More Information About Us</h2>
-         <table class="table table-bordered">
-           <thead>
-             <tr>
-               <th>Questions</th>
-               <th>Wyatt</th>
-               <th>Edison</th>
-               <th>Diego</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <td>1. What classes are you currently taking?</td>
-               <td>I am taking:
+
+       <br></br>
+       <!-- Adding the collapsible information-->
+      <div class="container">
+
+
+       <h2>More Information About Us</h2>
+       <h5>Click on the questions below to learn more about the Fortunate's Gang members</h5>
+       <button class="collapsible">What classes are you currently taking?</button>
+       <div class="content">
+         <div class="d-flex bd-highlight">
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Wyatt </strong>is taking:
+               <td>
                  <li>
                    B IMD 250
                  </li>
@@ -134,7 +130,11 @@
                    B BUS 215
                  </li>
                 </td>
-               <td>I am taking:
+             </p>
+           </div>
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Edison </strong>is taking:
+               <td>
                  <li>
                    B IMD 233
                  </li>
@@ -145,7 +145,11 @@
                    B CORE 133
                  </li>
                </td>
-               <td>I am taking:
+             </p>
+           </div>
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Diego </strong>is taking:
+               <td>
                  <li>
                    CSSSKL 342
                  </li>
@@ -156,41 +160,82 @@
                    B IMD 233
                  </li>
                 </td>
-             </tr>
-             <tr>
-               <td>
-                 2. What is your favorite hobby?</td>
-               <td>I enjoy taking photos and creating videos.</td>
-               <td>I enjoy making art, more specifically, self portraits with colored pencil</td>
-               <td>I enjoy taking electronics apart and building new things</td>
-             </tr>
-             <tr>
-               <td>3. List three qualities you admire the most on a person?</td>
+           </div>
+         </div>
+       </div>
+
+       <button class="collapsible">What is your favorite hobby?</button>
+       <div class="content">
+         <div class="d-flex bd-highlight">
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Wyatt </strong>enjoys taking photos and creating videos.</p>
+           </div>
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Edison </strong>enjoys making art, more specifically, self portraits with colored pencil.</p>
+           </div>
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Diego </strong>enjoys taking electronics apart and building new things</p>
+           </div>
+         </div>
+       </div>
+       <button class="collapsible">List three qualities you admire the most on a person?</button>
+       <div class="content">
+         <div class="d-flex bd-highlight">
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Wyatt:</strong>
                <td>
                  <ol>
-                 <li>Honesty</li>
-                 <li>Reliablity</li>
-                 <li>Authenticity</li>
-               </ol>
+                   <li>Honesty</li>
+                   <li>Reliablity</li>
+                   <li>Authenticity</li>
+                </ol>
                </td>
+               <td>
+             </p>
+           </div>
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Edison:</strong>
                <td>
                  <ol>
                  <li>Optimistic</li>
                  <li>Trustworthy</li>
                  <li>Inspiring</li>
-               </ol>
-             </td>
-             <td>
-               <ol>
-                 <li>Honesty</li>
-                 <li>Respect</li>
-                 <li>Transparency</li>
-               </ol>
-             </td>
-             </tr>
-           </tbody>
-
-         </table>
+                </ol>
+              </td>
+             </p>
+           </div>
+           <div class="p-2 flex-fill bd-highlight">
+             <p><strong>Diego:</strong>
+               <td>
+                 <ol>
+                   <li>Honesty</li>
+                   <li>Respect</li>
+                   <li>Transparency</li>
+                 </ol>
+               </td>
+           </div>
+         </div>
        </div>
+       </div>
+      <br></br>
+      <br></br>
+       <!-- Adding the javascript for the collapsible-->
+       <script>
+       var coll = document.getElementsByClassName("collapsible");
+       var i;
+
+       for (i = 0; i < coll.length; i++) {
+         coll[i].addEventListener("click", function() {
+           this.classList.toggle("active");
+           var content = this.nextElementSibling;
+           if (content.style.display === "block") {
+             content.style.display = "none";
+           } else {
+             content.style.display = "block";
+           }
+         });
+       }
+     </script>
+
 </body>
 </html>
